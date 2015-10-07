@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+// head.ready(function(){
 
 // // Clear placeholder
 // 	(function() {

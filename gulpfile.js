@@ -101,10 +101,12 @@ gulp.task('js', function () {
 });
 
 gulp.task('copy', function() {
-   gulp.src('src/img/*.*')
+   gulp.src('src/img/**')
    .pipe(gulp.dest('site/img/'));
    gulp.src('src/fonts/*.*')
    .pipe(gulp.dest('site/css/fonts/'));
+   gulp.src('src/css/*.*')
+   .pipe(gulp.dest('site/css/'));
    gulp.src('src/video/*.*')
    .pipe(gulp.dest('site/video/'));
 });
@@ -162,7 +164,7 @@ gulp.task('browser-sync', function() {
     browserSync({
         server: {
             baseDir: dest.root,
-            directory: true,
+            // directory: true,
             // index: 'index.html'
         },
         files: [dest.html + '/*.html', dest.css + '/*.css', dest.js + '/*.js'],

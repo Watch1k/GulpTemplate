@@ -1,3 +1,4 @@
-//= lib/jquery.js
-//= lib/slick.min.js
-//= common.js
+head.load(
+	"js/lib/jquery.min.js",
+	"js/common.js"
+);
